@@ -1,6 +1,6 @@
-# JavaFXTemplate
+# CalendarioCSS
 
-Plantilla de creación de proyectos con **JavaFX** con Maven
+Calendario creado con componentes propios hechos con **JavaFX**  
 
 
 
