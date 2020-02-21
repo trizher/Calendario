@@ -3,6 +3,7 @@ package dad.javafx;
 import dad.javafx.calendario.CalendarioController;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class CalendarioApp extends Application {
@@ -18,6 +19,7 @@ public class CalendarioApp extends Application {
 		primaryStage.setTitle("Calendario");
 		primaryStage.setScene(scene);
 		primaryStage.setResizable(false);
+		primaryStage.getIcons().add(new Image("/icon/calendar-32x32.png"));
 		primaryStage.show();
 
 	}
