@@ -42,6 +42,7 @@ public class CalendarioController implements Initializable {
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+		view.getStylesheets().add(getClass().getResource("/css/calendario.css").toExternalForm());
 		year.set(LocalDate.now().getYear());
 
 		eneroMCalendar.yearProperty().bind(year);

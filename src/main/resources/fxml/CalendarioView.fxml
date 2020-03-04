@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox fx:id="view" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="view" styleClass="root" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="600.0" vgap="5.0">
         <columnConstraints>
@@ -25,9 +25,9 @@
             <RowConstraints minHeight="-Infinity" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="retrocederButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onRetrocederAction" text="&lt;" GridPane.valignment="TOP" />
-            <Button fx:id="avanzarButton" mnemonicParsing="false" onAction="#onAvanzarAction" text="&gt;" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP" />
-            <Label fx:id="anioLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+            <Button fx:id="retrocederButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onRetrocederAction" styleClass="changeButton" text="&lt;" GridPane.valignment="TOP" />
+            <Button fx:id="avanzarButton" mnemonicParsing="false" onAction="#onAvanzarAction" styleClass="changeButton" text="&gt;" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="TOP" />
+            <Label fx:id="anioLabel" styleClass="year" text="Label" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
             <MonthCalendar fx:id="eneroMCalendar" monthProperty="1" GridPane.rowIndex="1" />
             <MonthCalendar fx:id="febreroMCalendar" monthProperty="2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
             <MonthCalendar fx:id="marzoMCalendar" monthProperty="3" GridPane.columnIndex="2" GridPane.rowIndex="1" />
